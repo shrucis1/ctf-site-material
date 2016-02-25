@@ -15,16 +15,15 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">TJCTF</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="/scoreboard/">Scoreboard</a></li>
-        <li><a href="/register/">Register</a></li>
-        <li><a href="/login/">Login</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#sponsor">Sponsor</a></li>
         <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-      	<li><a href="/scoreboard/">Scoreboard</a></li>
-        <li><a href="/register/">Register</a></li>
-        <li><a href="/login/">Login</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#sponsor">Sponsor</a></li>
+        <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -36,10 +35,10 @@
         <br><br>
         <h1 class="header center black-text text-lighten-2">TJCTF</h1>
         <div class="row center">
-          <h5 class="header col s12 dark">insert info about TJCTF here</h5>
+          <h5 class="header col s12 dark">$start-date to $end-date</h5>
         </div>
         <div class="row center">
-          <a href="/register/" id="register-now" class="btn-large waves-effect waves-light teal lighten-1">Register Now</a>
+          <a href="#register" id="register-now" class="btn-large waves-effect waves-light teal lighten-1">Register Now</a>
         </div>
         <br><br>
 
@@ -95,12 +94,11 @@
     </div>
   </div>
 
-
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="register">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="header col s12 med black-border">Prizes</h1>
+          <h1 class="header col s12 light white-text black-border">Sign Up For Emails</h1>
         </div>
       </div>
     </div>
@@ -109,64 +107,57 @@
 
   <div class="container">
     <div class="section">
-
-      <div class="row">
+        <div class="row">
+            <div class="col s12 center">
+                <h4 class="light black-text center">You will receive more information about TJCTF by signing up for emails.</h4>
+            </div>
+        </div>
+        <div class="row">
         <div class="col s12 center">
-          <p class="center light">Thanks to our sponsor $sponsor, we're happy to offer the following prizes.</p>
+            <form class="center" method="POST" id="register-form">
+                <input type="text" id="name" name="name" placeholder="Name" />
+                <input type="text" id="email" name="email" placeholder="Email" />
+                <input type="submit" class="btn-large waves-effect waves-light cyan" value="Sign Up" />
+            </form>
         </div>
       </div>
-      <div class="row">
-      	<div class="col s12 m3">
-            <div class="icon-block">
-            <h5 class="center">First Place</h5>
-
-            <p class="light">$first_place_prize</p>
-          </div>
-
-   	 	</div>
-        <div class="col s12 m3">
-            <div class="icon-block">
-            <h5 class="center">Second Place</h5>
-
-            <p class="light">$second_place_prize</p>
-          </div>
-
-   	 	</div>
-        <div class="col s12 m3">
-            <div class="icon-block">
-            <h5 class="center">Third Place</h5>
-
-            <p class="light">$third_place_prize</p>
-          </div>
-
-   	 	</div>
-        <div class="col s12 m3">
-            <div class="icon-block">
-            <h5 class="center">Top 10 Teams</h5>
-
-            <p class="light">$top_ten_teams_prize</p>
-          </div>
-
-   	 	</div>
-  </div>
   </div>
   </div>
 
-
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="sponsor">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="header col s12 light black-border">Our Sponsors</h1>
+          <h1 class="header col s12 light white-text black-border">Our Sponsors</h1>
         </div>
       </div>
     </div>
     <div class="parallax blurred"><img src="dome2.png" alt="TJHSST Dome 2"></div>
   </div>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 center">
+                <h4 class="light black-text center">We will contact you about more details.</h4>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col s12 center">
+            <form class="center" method="POST" id="sponsor-form">
+                <input required type="text" id="company-name" name="company-name" placeholder="Company Name" />
+                <input rqeuired type="text" id="contact-name" name="contact-name" placeholder="Contact Name" />
+                <input required type="email" id="company-email" name="company-email" placeholder="Contact Email" />
+                <input required type="tel" id="contact-phone" name="contact-phone" placeholder="Contact Phone Number" />
+                <input type="submit" class="btn-large waves-effect waves-light teal" value="Sponsor" />
+            </form>
+        </div>
+      </div>
+  </div>
+  </div>
 
   <footer class="page-footer teal">
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Thank You!</h5>
           <p class="grey-text text-lighten-4">This event would not be possible without the help of our sponsors...</p>
@@ -181,7 +172,7 @@
             <li><a class="white-text" href="#sponsor3site">$sponsor3</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="footer-copyright">
       <div class="container">

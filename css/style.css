@@ -67,4 +67,12 @@ footer.page-footer {
 	-webkit-filter: blur(3px);
 }
 
+.header img{
+	background: teal;
+}
+
+.transluscent {
+	opacity: 0.4;
+}
+
 

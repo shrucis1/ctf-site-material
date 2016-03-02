@@ -25,7 +25,7 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="static/css/style.css?2016030108" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css?2016030201" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
 <body>
   {% if invalid_email %}
@@ -39,7 +39,8 @@
   {% elif success %}
   <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
   {% endif %}
-  <nav class="blue-grey" role="navigation">
+  <header>
+      <nav class="blue-grey" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">TJCTF</a>
       <ul class="right blue-grey hide-on-med-and-down">
@@ -80,7 +81,8 @@
     </div>
     <div class="parallax header"><img src="static/logo.svg" height="70px" width="86px" alt="TJCTF" opacity=.2></div>
   </div>
-
+</header>
+<main>
 
   <div class="container">
     <div class="section">
@@ -112,7 +114,7 @@
             <h2 class="center black-text"><i class="material-icons cyan-text">assignment_turned_in</i></h2>
             <h5 class="center grey-text text-darken-4">How does TJCTF work?</h5>
 
-            <p class="light grey-text text-darken-2">Simple. Your team is given $days days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
+            <p class="light grey-text text-darken-2">Simple. Your team is given 2 days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
             <p class="light cyan-text"><a href="/rules/">Complete Rules &rarr;</a></p>
           </div>
         </div>
@@ -194,11 +196,11 @@
             </div>
         </div>
   </div>
-
+  </main>
   <footer class="page-footer blue-grey">
     <div class="footer-copyright">
       <div class="container">
-      	&copy; 2016 <a href="/" class="cyan-text">TJCTF</a>
+      	&copy; 2016 <a href="/" class="lime-text">TJCTF</a>
       </div>
     </div>
   </footer>

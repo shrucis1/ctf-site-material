@@ -84,4 +84,47 @@ footer.page-footer {
 	opacity: 0.4;
 }
 
+.error {
+	background: #ef5350;
+	text-align: center;
+	padding: 10px;
+	z-index: 10;
+	position: fixed;
+  	top: 10px;
+  	left: 50%;
+  	width: auto;
+	height: auto;
+	opacity: 0.8;
+	border-radius: 10px;
+    transform: translate(-50%, 0%);
+}
 
+.info {
+	background: #eeff41;
+	text-align: center;
+	padding: 10px;
+	z-index: 10;
+	position: fixed;
+  	top: 10px;
+  	left: 50%;
+  	width: auto;
+	height: auto;
+	opacity: 0.8;
+	border-radius: 10px;
+    transform: translate(-50%, 0%);
+}
+
+.success {
+	background: #00e676;
+	text-align: center;
+	padding: 10px;
+	z-index: 10;
+	position: fixed;
+  	top: 10px;
+  	left: 50%;
+  	width: auto;
+	height: auto;
+	opacity: 0.8;
+	border-radius: 10px;
+    transform: translate(-50%, 0%);
+}

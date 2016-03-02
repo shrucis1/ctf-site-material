@@ -1,2 +1,5 @@
 .DS*
+venv
 *.zip
+mailgun.py
+*.pyc

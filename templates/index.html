@@ -7,10 +7,21 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css?2016030104" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css?2016030108" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
 <body>
+  {% if invalid_email %}
+  <div class="error">Invalid Email. Please try again.</div>
+  {% elif conf_email_error %}
+  <div class="info">Your email was added to the list, but we were unable to send you a confirmation email.</div>
+  {% elif add_error %}
+  <div class="error ">Oops! We were unable to add you to the mailing list. Please try again later.</div>
+  {% elif create_list_error %}
+  <div class="info">Oops! Looks like our server is experiencing some errors. Please try again later.</div>
+  {% elif success %}
+  <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
+  {% endif %}
   <nav class="blue-grey" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">TJCTF</a>
@@ -50,7 +61,7 @@
 
       </div>
     </div>
-    <div class="parallax header"><img src="logo.svg" height="70px" width="86px" alt="TJCTF" opacity=.2></div>
+    <div class="parallax header"><img src="static/logo.svg" height="70px" width="86px" alt="TJCTF" opacity=.2></div>
   </div>
 
 
@@ -110,7 +121,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax blurred transluscent"><img src="dome.png" alt="TJHSST Dome"></div>
+    <div class="parallax blurred transluscent"><img src="static/dome.png" alt="TJHSST Dome"></div>
   </div>
 
   <div class="container">
@@ -148,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax blurred transluscent"><img src="dome2.png" alt="TJHSST Dome 2"></div>
+    <div class="parallax blurred transluscent"><img src="static/dome2.png" alt="TJHSST Dome 2"></div>
   </div>
 <div class="container">
    <div class="section">
@@ -178,8 +189,9 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
   </body>
 </html>

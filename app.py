@@ -48,4 +48,4 @@ def prep():
     return render_template('prep.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=9020)
+    app.run(port=9020)

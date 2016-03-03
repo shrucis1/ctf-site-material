@@ -143,3 +143,8 @@ footer.page-footer {
 .active {
     background:#546e7a;
 }
+
+.input-field label {
+    background: #ffffff;
+    color: #607d8b;
+}

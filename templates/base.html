@@ -21,13 +21,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- CSS  -->
     {% block css %}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-        <link href="/static/css/style.css?2016030203" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     {% endblock %}
 </head>
 
@@ -78,7 +78,7 @@
                     <br>
                 </div>
             </div>
-            <div class="parallax header"><img src="static/logo.svg" height="70px" width="86px" alt="TJCTF" opacity=.2></div>
+            <div class="parallax header"><img src="/static/logo.svg" height="70px" width="86px" alt="TJCTF" opacity=.2></div>
         </div>
     </header>
     <main>
@@ -98,8 +98,8 @@
     {% block js %}
         <!--  Scripts  -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="static/js/materialize.js"></script>
-        <script src="static/js/init.js"></script>
+        <script src="/static/js/materialize.js"></script>
+        <script src="/static/js/init.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     {% endblock %}
 {% endblock %}

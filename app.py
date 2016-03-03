@@ -37,15 +37,15 @@ def index():
 
 @app.route('/about/')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', about_active=True)
 
 @app.route('/rules/')
 def rules():
-    return render_template('rules.html')
+    return render_template('rules.html', rules_active=True)
 
 @app.route('/prep/')
 def prep():
-    return render_template('prep.html')
+    return render_template('prep.html', prep_active=True)
 
 if __name__ == '__main__':
     app.run(port=9020)

@@ -1,115 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>TJCTF 2016 - About</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/static/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/static/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/static/css/style.css?2016030201" type="text/css" rel="stylesheet" media="screen,projection"/>
-  </head>
-<body>
-  {% if invalid_email %}
-  <div class="error">Invalid Email. Please try again.</div>
-  {% elif conf_email_error %}
-  <div class="info">Your email was added to the list, but we were unable to send you a confirmation email.</div>
-  {% elif add_error %}
-  <div class="error ">Oops! We were unable to add you to the mailing list. Please try again later.</div>
-  {% elif create_list_error %}
-  <div class="info">Oops! Looks like our server is experiencing some errors. Please try again later.</div>
-  {% elif success %}
-  <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
-  {% endif %}
-  <header>
-  <nav class="blue-grey" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="/" class="brand-logo">TJCTF</a>
-      <ul class="right blue-grey hide-on-med-and-down">
-        <li class="active"><a href="/about/">About</a></li>
-        <li><a href="/rules/">Rules</a></li>
-        <li><a href="/prep/">Prep</a></li>
-        <li><a href="https://webchat.freenode.net/?channels=tjctf" target="_blank">Chat</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-          <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/rules/">Rules</a></li>
-        <li><a href="/prep/">Prep</a></li>
-        <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center grey-text text-darken-4">TJCTF</h1>
-        <div class="row center">
-          <h5 class="header col s12 blue-grey-text">About</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax header"><img src="/static/logo.svg" height="70px" width="86px" alt="TJCTF"></div>
-  </div>
-</header>
-<main>
-  <div class="container">
+{% extends "base.html" %}
+{% block title %}TJCTF 2016 - About{% endblock %}
+{% block index_banner %}
+    <h1 class="header center grey-text text-darken-4">TJCTF</h1>
+    <div class="row center">
+        <h5 class="header col s12 blue-grey-text">About</h5>
+</div>
+{% endblock %}
+{% block main %}
+    <div class="container">
     <div class="section">
-
-      <!--   FAQ   -->
-      <div class="row">
-        <div class="col s12 m12">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons cyan-text">description</i></h2>
-            <h5 class="center grey-text text-darken-4">About</h5>
-
-
+    <!--   FAQ   -->
+    <div class="row">
+    <div class="col s12 m12">
+    <div class="icon-block">
+        <h2 class="center black-text"><i class="material-icons cyan-text">description</i></h2>
+        <h5 class="center grey-text text-darken-4">About</h5>
         <p>TJCTF is a Capture the Flag competition similar to <a href="http://picoctf.org">PicoCTF</a>. It is targeted at high schoolers interested in computer science and cyber security. Each participant will compete on a team of up to 5 people and solve problems ranging from binary exploitation to cryptography. While CTFs are frequently branded as security competitions, the techniques they teach are often useful in many fields of computer science. Anyone who enjoys working with computers and solving challenging puzzles is encouraged to compete. While only American high school students (or younger) are eligible for prizes, anyone can play for fun. Registration is now open on <a href="https://tjctf.org/#register">our registration page</a>, and you can also follow us on <a href="https://twitter.com/tjctf/">Twitter</a> and join the <a href="https://www.facebook.com/TJCaptureTheFlag">Facebook Group</a>. If you have any comments or questions, feel free to contact us at <a href="mailto:contact@tjctf.org">contact@tjctf.org</a>.</p>
-
-            
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-  </main>
-  <footer class="page-footer blue-grey">
-    <div class="footer-copyright">
-      <div class="container">
-      	&copy; 2016 <a href="/" class="lime-text">TJCTF</a>
-      </div>
     </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="/static/js/materialize.js"></script>
-  <script src="/static/js/init.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-  </body>
-</html>
+    </div>
+    </div>
+    </div>
+{% endblock %}

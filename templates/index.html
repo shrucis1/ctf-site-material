@@ -1,216 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>TJCTF 2016</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="static/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="static/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="static/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="static/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="static/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="static/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="static/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="static/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="static/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="static/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="static/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="static/css/style.css?2016030201" type="text/css" rel="stylesheet" media="screen,projection"/>
-  </head>
-<body>
-  {% if invalid_email %}
-  <div class="error">Invalid Email. Please try again.</div>
-  {% elif conf_email_error %}
-  <div class="info">Your email was added to the list, but we were unable to send you a confirmation email.</div>
-  {% elif add_error %}
-  <div class="error ">Oops! We were unable to add you to the mailing list. Please try again later.</div>
-  {% elif create_list_error %}
-  <div class="info">Oops! Looks like our server is experiencing some errors. Please try again later.</div>
-  {% elif success %}
-  <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
-  {% endif %}
-  <header>
-      <nav class="blue-grey" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">TJCTF</a>
-      <ul class="right blue-grey hide-on-med-and-down">
-        <li><a href="#register">Register</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/rules/">Rules</a></li>
-        <li><a href="/prep/">Prep</a></li>
-        <li><a href="#sponsor">Sponsors</a></li>
-        <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#register">Register</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/rules/">Rules</a></li>
-        <li><a href="/prep/">Prep</a></li>
-        <li><a href="#sponsor">Sponsors</a></li>
-        <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+{% extends "base.html" %}
+{% block index_banner %}
+    <h1 class="header center grey-text text-darken-4">TJCTF</h1>
+    <div class="row center">
+        <h5 class="header col s12 blue-grey-text">May 13-15</h5>
     </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center grey-text text-darken-4">TJCTF</h1>
-        <div class="row center">
-          <h5 class="header col s12 blue-grey-text">May 13-15</h5>
-        </div>
-        <div class="row center">
-          <a href="#register" id="register-now" class="btn-large waves-effect waves-light cyan">Register Now</a>
-        </div>
-        <br><br>
-
-      </div>
+    <div class="row center">
+        <a href="#register" id="register-now" class="btn-large waves-effect waves-light cyan">Register Now</a>
     </div>
-    <div class="parallax header"><img src="static/logo.svg" height="70px" width="86px" alt="TJCTF" opacity=.2></div>
-  </div>
-</header>
-<main>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   FAQ   -->
-      <div class="row">
-        <div class="col s12 m3">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons cyan-text">description</i></h2>
-            <h5 class="center grey-text text-darken-4">What is TJCTF?</h5>
-
-            <p class="light grey-text text-darken-2">TJCTF is a cybersecurity competition designed for high school students. Challenges will span various difficulty levels, so there will be problems for students who are new to computer science as well as those who are computer security experts.</p>
-            <p class="light cyan-text"><a href="/about/">About &rarr;</a></p>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons cyan-text">people</i></h2>
-            <h5 class="center grey-text text-darken-4">How Do I Register?</h5>
-
-            <p class="light grey-text text-darken-2">TJCTF is open to all eligible High School students (tl;dr Americans, but if you have questions read the rules). You can compete in teams consisting of up to 5 members. Teams who do not fit these criteria may play, but are not eligible for prizes.</p>
-            <p class="light cyan-text"><a href="#register">Register Here &rarr;</a></p>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons cyan-text">assignment_turned_in</i></h2>
-            <h5 class="center grey-text text-darken-4">How does TJCTF work?</h5>
-
-            <p class="light grey-text text-darken-2">Simple. Your team is given 2 days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
-            <p class="light cyan-text"><a href="/rules/">Complete Rules &rarr;</a></p>
-          </div>
-        </div>
-        <div class="col s12 m3">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons cyan-text">code</i></h2>
-            <h5 class="center grey-text text-darken-4">How do I prepare?</h5>
-
-            <p class="light grey-text text-darken-2">TJCTF has challenges for computer science students with all levels of experience, so preparation shouldn't be necessary. If you'd like to brush up on computer security to give your team an edge, we've compiled some helpful materials.</p>
-            <p class="light cyan-text"><a href="/prep/">Prep Materials &rarr;</a></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper" id="register">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header col s12 light blue-grey-text text-darken-2">Sign up for emails</h1>
-        </div>
-      </div>
-    </div>
-    <div class="parallax blurred transluscent"><img src="static/dome.png" alt="TJHSST Dome"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-        <div class="row">
-            <div class="col s12 center">
-                <h5 class="light grey-text text-darken-1 center">To receive important information and notifications, join our mailing list. We will let you know when registration opens, notify you before the start of the competition, and tell you about other upcoming CTFs.</h5>
-            </div>
-        </div>
-        <div class="col s12 center">
-            <form class="center col s12" method="POST" id="register-form">
-            	<div class="row">
-                  <div class="input-field col s12">
-                	<input required type="text" id="name" name="name" class="validate"/>
-                	<label for="name">Name</label>
+{% endblock %}
+{% block main %}
+    <div class="container">
+        <div class="section">
+            <!--   FAQ   -->
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center black-text"><i class="material-icons cyan-text">description</i></h2>
+                        <h5 class="center grey-text text-darken-4">What is TJCTF?</h5>
+                        <p class="light grey-text text-darken-2">TJCTF is a cybersecurity competition designed for high school students. Challenges will span various difficulty levels, so there will be problems for students who are new to computer science as well as those who are computer security experts.</p>
+                        <p class="light cyan-text"><a href="/about/">About &rarr;</a></p>
                     </div>
                 </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                	<input required type="email" id="email" name="email"/>
-                    <label for="email">Email Address</label>
-                  </div>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center black-text"><i class="material-icons cyan-text">people</i></h2>
+                        <h5 class="center grey-text text-darken-4">How Do I Register?</h5>
+                        <p class="light grey-text text-darken-2">TJCTF is open to all eligible High School students (tl;dr Americans, but if you have questions read the rules). You can compete in teams consisting of up to 5 members. Teams who do not fit these criteria may play, but are not eligible for prizes.</p>
+                        <p class="light cyan-text"><a href="#register">Register Here &rarr;</a></p>
+                    </div>
                 </div>
-                <input type="submit" class="btn-large waves-effect waves-light cyan" value="Sign Up" />
-            </form>
-      </div>
-  </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper" id="sponsor">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header col s12 light blue-grey-text text-darken-2">Our Sponsors</h1>
-        </div>
-      </div>
-    </div>
-    <div class="parallax blurred transluscent"><img src="static/dome2.png" alt="TJHSST Dome 2"></div>
-  </div>
-<div class="container">
-   <div class="section">
-        <div class = "row">
-            <div class="col s12 center">
-                <h4 class = "light grey-text text-darken-1 center">Sponsors coming soon.</h4>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center black-text"><i class="material-icons cyan-text">assignment_turned_in</i></h2>
+                        <h5 class="center grey-text text-darken-4">How does TJCTF work?</h5>
+                        <p class="light grey-text text-darken-2">Simple. Your team is given 2 days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
+                        <p class="light cyan-text"><a href="/rules/">Complete Rules &rarr;</a></p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center black-text"><i class="material-icons cyan-text">code</i></h2>
+                        <h5 class="center grey-text text-darken-4">How do I prepare?</h5>
+                        <p class="light grey-text text-darken-2">TJCTF has challenges for computer science students with all levels of experience, so preparation shouldn't be necessary. If you'd like to brush up on computer security to give your team an edge, we've compiled some helpful materials.</p>
+                        <p class="light cyan-text"><a href="/prep/">Prep Materials &rarr;</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-   </div>
-  </div>
-  <div class="section">
+    </div>
+    <div class="parallax-container valign-wrapper" id="register">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1 class="header col s12 light blue-grey-text text-darken-2">Sign up for emails</h1>
+                </div>
+            </div>
+        </div>
+        <div class="parallax blurred transluscent"><img src="static/dome.png" alt="TJHSST Dome"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <h5 class="light grey-text text-darken-1 center">To receive important information and notifications, join our mailing list. We will let you know when registration opens, notify you before the start of the competition, and tell you about other upcoming CTFs.</h5>
+                </div>
+            </div>
+            <div class="col s12 center">
+                <form class="center col s12" method="POST" id="register-form">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input required type="text" id="name" name="name" class="validate" />
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input required type="email" id="email" name="email" />
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn-large waves-effect waves-light cyan" value="Sign Up" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container valign-wrapper" id="sponsor">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1 class="header col s12 light blue-grey-text text-darken-2">Our Sponsors</h1>
+                </div>
+            </div>
+        </div>
+        <div class="parallax blurred transluscent"><img src="static/dome2.png" alt="TJHSST Dome 2"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <h4 class="light grey-text text-darken-1 center">Sponsors coming soon.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
         <div class="row">
             <div class="col s12 center">
                 <h5 class="light grey-text text-darken-1 center">Sponsor sign-up form <a href="http://goo.gl/forms/gLPh2fHz3M" class="cyan-text">here</a>.</h6>
             </div>
         </div>
-  </div>
-  </main>
-  <footer class="page-footer blue-grey">
-    <div class="footer-copyright">
-      <div class="container">
-      	&copy; 2016 <a href="/" class="lime-text">TJCTF</a>
-      </div>
     </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="static/js/materialize.js"></script>
-  <script src="static/js/init.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-  </body>
-</html>
+{% endblock }

@@ -11,10 +11,10 @@ def index():
             email_address = request.form['email']
             if not get_list('ctfmembers'):
                 if not create_list('ctfmembers'):
-                    print "Error Creating Mailing List"
+                    print("Error Creating Mailing List")
                     return render_template('index.html', create_list_error=True)
                 else:
-                    print "Mailing List Created"
+                    print("Mailing List Created")
                 if add_user_to_list(name, email_address, 'ctfmembers'):
                     if send_confirmation_email(name, email_address):
                         return render_template('index.html', success=True)

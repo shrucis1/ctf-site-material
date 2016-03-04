@@ -27,7 +27,7 @@
     {% block css %}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-        <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="/static/css/style.css?2016030300" type="text/css" rel="stylesheet" media="screen,projection" />
     {% endblock %}
 </head>
 
@@ -35,6 +35,7 @@
 {% block body %}
     {% if invalid_email %}
     <div class="error">Invalid Email. Please try again.</div>
+    <script type
     {% elif conf_email_error %}
     <div class="info">Your email was added to the list, but we were unable to send you a confirmation email.</div>
     {% elif add_error %}
@@ -51,19 +52,19 @@
                     <img src="/static/logo-thin-white-header.png" id="logo" alt="TJCTF" title="TJCTF" />
                 </a>
                 <ul class="right light-blue hide-on-med-and-down">
-                    <li><a href="/#register">Register</a></li>
-                    <li><a href="/#sponsor">Sponsorship</a></li>
-                    <li class="{% if about_active %}active{% endif %}"><a href="/about/">About</a></li>
-                    <li class="{% if rules_active %}active{% endif %}"><a href="/rules/">Rules</a></li>
-                    <li class="{% if prep_active %}active{% endif %}"><a href="/prep/">Prep</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#sponsor">Sponsorship</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#prep">Prep</a></li>
                     <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="/#register">Register</a></li>
-                    <li><a href="/#sponsor">Sponsorship</a></li>
-                    <li><a href="/about/" class="{% if about_active %}active{% endif %}">About</a></li>
-                    <li><a href="/rules/" class="{% if rules_active %}active{% endif %}">Rules</a></li>
-                    <li><a href="/prep/" class="{% if prep_active %}active{% endif %}">Prep</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#sponsor">Sponsorship</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#prep">Prep</a></li>
                     <li><a href="https://webchat.freenode.net/?channels=tjctf">Chat</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
@@ -104,7 +105,6 @@
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="/static/js/materialize.js"></script>
         <script src="/static/js/init.js"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     {% endblock %}
 {% endblock %}
   </body>

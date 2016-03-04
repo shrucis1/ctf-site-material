@@ -20,7 +20,7 @@
                         <h2 class="center black-text"><i class="material-icons light-blue-text">description</i></h2>
                         <h5 class="center grey-text text-darken-4">What is TJCTF?</h5>
                         <p class="light grey-text text-darken-2">TJCTF is a cybersecurity competition designed for high school students. Challenges will span various difficulty levels, so there will be problems for students who are new to computer science as well as those who are computer security experts.</p>
-                        <p class="light light-blue-text"><a href="/about/">About &rarr;</a></p>
+                        <p class="light light-blue-text"><a href="#about">About &rarr;</a></p>
                     </div>
                 </div>
                 <div class="col s12 m3">
@@ -36,7 +36,7 @@
                         <h2 class="center black-text"><i class="material-icons light-blue-text">assignment_turned_in</i></h2>
                         <h5 class="center grey-text text-darken-4">How does it work?</h5>
                         <p class="light grey-text text-darken-2">Simple. Your team is given 2 days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
-                        <p class="light light-blue-text"><a href="/rules/">Competition Rules &rarr;</a></p>
+                        <p class="light light-blue-text"><a href="#rules">Competition Rules &rarr;</a></p>
                     </div>
                 </div>
                 <div class="col s12 m3">
@@ -44,7 +44,7 @@
                         <h2 class="center black-text"><i class="material-icons light-blue-text">code</i></h2>
                         <h5 class="center grey-text text-darken-4">How do I prepare?</h5>
                         <p class="light grey-text text-darken-2">TJCTF has challenges for computer science students with all levels of experience, so preparation shouldn't be necessary. If you'd like to brush up on computer security to give your team an edge, we've compiled some helpful materials.</p>
-                        <p class="light light-blue-text"><a href="/prep/">Prep Materials &rarr;</a></p>
+                        <p class="light light-blue-text"><a href="#prep">Prep Materials &rarr;</a></p>
                     </div>
                 </div>
             </div>
@@ -111,4 +111,44 @@
             </div>
         </div>
     </div>
+
+   <div class="parallax-container valign-wrapper" id="about">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1 class="header col s12 light blue-grey-text text-darken-2">TJCTF - About</h1>
+                </div>
+            </div>
+        </div>
+        <div class="parallax blurred transluscent"><img src="static/dome2.png" alt="TJHSST Dome 2"></div>
+    </div>
+    
+    {% include "about.html" %}
+
+<div class="parallax-container valign-wrapper" id="rules">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1 class="header col s12 light blue-grey-text text-darken-2">TJCTF - Rules</h1>
+                </div>
+            </div>
+        </div>
+        <div class="parallax blurred transluscent"><img src="static/dome2.png" alt="TJHSST Dome 2"></div>
+    </div>
+    
+    {% include "rules.html" %}
+
+    <div class="parallax-container valign-wrapper" id="prep">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1 class="header col s12 light blue-grey-text text-darken-2">TJCTF - Preparation</h1>
+                </div>
+            </div>
+        </div>
+        <div class="parallax blurred transluscent"><img src="static/dome2.png" alt="TJHSST Dome 2"></div>
+    </div>
+    
+    {% include "prep.html" %}
+
 {% endblock %}

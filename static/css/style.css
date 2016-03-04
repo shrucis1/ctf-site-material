@@ -75,8 +75,13 @@ p {
         position: absolute;
         top: 40%;
     }
+
     #index-banner .section {
         top: 0;
+    }
+
+    #logo {
+        margin-left: -75px;
     }
 }
 
@@ -97,8 +102,12 @@ p {
     }
 }
 
-
-
+@media only screen and (max-width: 500px) {
+    h1.header > img {
+        zoom: 0.7;
+        margin-top: 20px;
+    }
+}
 
 .icon-block {
     padding: 0 15px;

@@ -206,7 +206,7 @@ footer.page-footer {
 }
 
 .input-field label {
-    background: #ffffff;
+    background: transparent;
     color: #607d8b;
 }
 nav {

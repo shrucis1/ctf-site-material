@@ -13,6 +13,22 @@ body {
     flex-direction: column;
 }
 
+.light-blue {
+    background-color: rgb(0, 138, 255) !important;
+}
+
+.light-blue-text {
+    color: rgb(0, 138, 255) !important;
+}
+
+.dark-blue {
+    background-color: rgb(49, 78, 97) !important;
+}
+
+.dark-blue-text {
+    color: rgb(49, 78, 97) !important;
+}
+
 main {
     flex: 1 0 auto;
 }

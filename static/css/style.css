@@ -30,6 +30,18 @@ body {
     color: rgb(49, 78, 97) !important;
 }
 
+#logo-container {
+    height: 100%;    
+}
+
+#logo {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+
 main {
     flex: 1 0 auto;
 }

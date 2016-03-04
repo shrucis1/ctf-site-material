@@ -59,7 +59,14 @@ p {
         top: 40%;
     }
     #index-banner .section {
-        top: 10%;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .row.four-column .col.m3 {
+        width: 50%;
+
     }
 }
 
@@ -67,7 +74,14 @@ p {
     #index-banner .section {
         top: 0;
     }
+
+    .row.four-column .col.m3 {
+        width: 100%;
+    }
 }
+
+
+
 
 .icon-block {
     padding: 0 15px;

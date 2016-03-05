@@ -59,6 +59,14 @@
     {% elif success %}
     <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
     {% endif %}
+
+    {% if invalid_email or add_error %}
+        <script>setTimeout(function() { $(".error").fadeOut(1000); }, 10000);</script>
+    {% elif conf_email_error or create_list_error %}
+        <script>setTimeout(function() { $(".info").fadeOut(1000); }, 10000);</script>
+    {% elif success %}
+        <script>setTimeout(function() { $(".success").fadeOut(1000); }, 10000);</script>
+    {% endif %}
     <header>
         <nav class="light-blue" role="navigation">
             <div class="nav-wrapper container">

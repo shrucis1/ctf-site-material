@@ -46,7 +46,7 @@ main {
     flex: 1 0 auto;
 }
 
-p {
+p, ol#rules {
     line-height: 2rem;
 }
 

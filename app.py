@@ -1,5 +1,5 @@
-from mail import *
 from flask import Flask, render_template, request
+from mail import validate_email, add_user_to_list, send_confirmation_email
 
 app = Flask(__name__)
 

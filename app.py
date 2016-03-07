@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from mail import validate_email, add_user_to_list, send_confirmation_email
+from mailgun import list_name
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def index():
     if not validate_email(email_address):
         return render_template("index.html", invalid_email=True)
 
-    if not add_user_to_list(name, email_address, "ctfmembers"):
+    if not add_user_to_list(name, email_address, list_name):
         return render_template("index.html", add_error=True)
 
     if not send_confirmation_email(name, email_address):

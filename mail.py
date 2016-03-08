@@ -1,4 +1,4 @@
-import mailgun
+import mailgun_config as mailgun
 import requests
 
 def validate_email(email_address):

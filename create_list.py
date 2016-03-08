@@ -1,5 +1,5 @@
 from mail import get_list, create_list
-from mailgun import list_name
+from mailgun_config import list_name
 
 print("[=] Creating mailing list...")
 if get_list(list_name):

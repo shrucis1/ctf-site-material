@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from mail import validate_email, add_user_to_list, send_confirmation_email
-from mailgun import list_name
+from mailgun_config import list_name
 
 app = Flask(__name__)
 

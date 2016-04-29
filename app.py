@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request
 from mail import validate_email, add_user_to_list, send_confirmation_email
 from mailgun_config import list_name
+import string, random
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if not request.method == 'POST':
-        return render_template("index.html")
+        verif = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits + "-_") for _ in range(42))
+        return render_template("index.html", verif=verif)
 
     name = request.form['name']
     email_address = request.form['email']

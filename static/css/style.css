@@ -217,3 +217,8 @@ nav {
 h1 {
     margin-bottom: -0.5rem;
 }
+
+h1 > img.mid-logo {
+    width: 100%;
+    max-width: 600px;
+}

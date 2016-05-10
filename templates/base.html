@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <title>{% block title %}TJCTF 2016{% endblock %}</title>
-    <meta name="application-name" content="TJCTF 2016" />
-    <meta name="msapplication-tooltip" content="TJCTF 2016" />
-    <meta name="description" content="A Capture the Flag cybersecurity competition for high school students run by the TJHSST Computer Security Club." />
-    <meta name="keywords" content="TJCTF, TJHSST Cybersecurity, TJ CSC, TJ Computer Security Club, TJ CTF, TJ Capture the flag, High school CTF, HS capture the flag" />
-    <meta name="author" content="TJ Computer Security Club" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="TJCTF 2016" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="msapplication-starturl" content="/" />
-    <meta name="theme-color" content="#008AFF" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="og:title" content="TJCTF 2016" />
-    <meta name="og:site_name" content="TJCTF 2016" />
-    <meta name="og:description" content="A Capture the Flag Cybersecurity competition run by the TJHSST Computer Security Club." />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='favicon/apple-icon-57x57.png') }}" />
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='favicon/apple-icon-60x60.png') }}" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='favicon/apple-icon-72x72.png') }}" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='favicon/apple-icon-76x76.png') }}" />
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='favicon/apple-icon-114x114.png') }}" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='favicon/apple-icon-120x120.png') }}" />
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='favicon/apple-icon-144x144.png') }}" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favicon/apple-icon-152x152.png') }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-icon-180x180.png') }}" />
-    <meta name="google–site–verification" content="{{ verif }}" />
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='favicon/android-icon-192x192.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}" />
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon/favicon-96x96.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}" />
-    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}" />
-    <link rel="manifest" href="{{ url_for('static', filename='favicon/manifest.json') }}" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='favicon/ms-icon-144x144.png') }}" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- CSS  -->
-    {% block css %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+        <title>{% block title %}TJCTF 2016{% endblock %}</title>
+        <meta name="application-name" content="TJCTF 2016" />
+        <meta name="msapplication-tooltip" content="TJCTF 2016" />
+        <meta name="description" content="A Capture the Flag cybersecurity competition for high school students run by the TJHSST Computer Security Club." />
+        <meta name="keywords" content="TJCTF, TJHSST Cybersecurity, TJ CSC, TJ Computer Security Club, TJ CTF, TJ Capture the flag, High school CTF, HS capture the flag" />
+        <meta name="author" content="TJ Computer Security Club" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="TJCTF 2016" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-starturl" content="/" />
+        <meta name="theme-color" content="#008AFF" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="og:title" content="TJCTF 2016" />
+        <meta name="og:site_name" content="TJCTF 2016" />
+        <meta name="og:description" content="A Capture the Flag Cybersecurity competition run by the TJHSST Computer Security Club." />
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='favicon/apple-icon-57x57.png') }}" />
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='favicon/apple-icon-60x60.png') }}" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='favicon/apple-icon-72x72.png') }}" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='favicon/apple-icon-76x76.png') }}" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='favicon/apple-icon-114x114.png') }}" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='favicon/apple-icon-120x120.png') }}" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='favicon/apple-icon-144x144.png') }}" />
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favicon/apple-icon-152x152.png') }}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-icon-180x180.png') }}" />
+        <meta name="google–site–verification" content="{{ verif }}" />
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='favicon/android-icon-192x192.png') }}" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}" />
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon/favicon-96x96.png') }}" />
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}" />
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}" />
+        <link rel="manifest" href="{{ url_for('static', filename='favicon/manifest.json') }}" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="{{ url_for('static', filename='favicon/ms-icon-144x144.png') }}" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- CSS  -->
+        {% block css %}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
         <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
-    {% endblock %}
+        {% endblock %}
     </head>
 
-<body>
-{% block body %}
-    {% if invalid_email %}
-    <div class="error">Invalid Email. Please try again.</div>
-    {% elif conf_email_error %}
-    <div class="info">Your email was added to the list, but we were unable to send you a confirmation email.</div>
-    {% elif add_error %}
-    <div class="error ">Oops! We were unable to add you to the mailing list. Please try again later.</div>
-    {% elif create_list_error %}
-    <div class="info">Oops! Looks like our server is experiencing some errors. Please try again later.</div>
-    {% elif success %}
-    <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
-    {% endif %}
+    <body>
+        {% block body %}
+        {% if invalid_email %}
+        <div class="error">Invalid Email. Please try again.</div>
+        {% elif conf_email_error %}
+        <div class="info">Your email was added to the list, but we were unable to send you a confirmation email.</div>
+        {% elif add_error %}
+        <div class="error ">Oops! We were unable to add you to the mailing list. Please try again later.</div>
+        {% elif create_list_error %}
+        <div class="info">Oops! Looks like our server is experiencing some errors. Please try again later.</div>
+        {% elif success %}
+        <div class="success">You've been added to the mailing list and should receive a confirmation email shortly.</div>
+        {% endif %}
 
-    {% if invalid_email or add_error %}
+        {% if invalid_email or add_error %}
         <script>setTimeout(function() { $(".error").fadeOut(1000); }, 10000);</script>
-    {% elif conf_email_error or create_list_error %}
+        {% elif conf_email_error or create_list_error %}
         <script>setTimeout(function() { $(".info").fadeOut(1000); }, 10000);</script>
-    {% elif success %}
+        {% elif success %}
         <script>setTimeout(function() { $(".success").fadeOut(1000); }, 10000);</script>
-    {% endif %}
-    <header>
+        {% endif %}
+        <header>
         <nav class="light-blue" role="navigation">
-            <div class="nav-wrapper container">
-                <a id="logo-container" href="#top" class="brand-logo">
-                    <img src="{{ url_for('static', filename='logo-thin-white-header.png') }}" id="logo" alt="TJCTF" title="TJCTF" />
-                </a>
-                <ul class="right light-blue hide-on-med-and-down">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#register">Register</a></li>
-                    <li><a href="#rules">Rules</a></li>
-                    <li><a href="#prep">Prep</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="http://webchat.freenode.net?nick=tjctf_player-.....&channels=%23tjctf&prompt=1&uio=MTY9dHJ1ZSYyPXRydWUmOT10cnVlJjExPTI1NiYxMj10cnVl1c" rel="noopener noreferrer" target="_blank">Chat</a></li>
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#register">Register</a></li>
-                    <li><a href="#rules">Rules</a></li>
-                    <li><a href="#prep">Prep</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="http://webchat.freenode.net?nick=tjctf_player-.....&channels=%23tjctf&prompt=1&uio=MTY9dHJ1ZSYyPXRydWUmOT10cnVlJjExPTI1NiYxMj10cnVl1c" rel="noopener noreferrer" target="_blank">Chat</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
-            </div>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#top" class="brand-logo">
+                <img src="{{ url_for('static', filename='logo-thin-white-header.png') }}" id="logo" alt="TJCTF" title="TJCTF" />
+            </a>
+            <ul class="right light-blue hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#prep">Prep</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="http://webchat.freenode.net?nick=tjctf_player-.....&channels=%23tjctf&prompt=1&uio=MTY9dHJ1ZSYyPXRydWUmOT10cnVlJjExPTI1NiYxMj10cnVl1c" rel="noopener noreferrer" target="_blank">Chat</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#prep">Prep</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="http://webchat.freenode.net?nick=tjctf_player-.....&channels=%23tjctf&prompt=1&uio=MTY9dHJ1ZSYyPXRydWUmOT10cnVlJjExPTI1NiYxMj10cnVl1c" rel="noopener noreferrer" target="_blank">Chat</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+        </div>
         </nav>
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot" id="top">
@@ -105,25 +105,25 @@
                 </div>
             </div>
             <div class="parallax header">
-                
+
             </div>
         </div>
-    </header>
-    <main>
-    {% block main %}
-        
-    {% endblock %}
-    </main>
-    <footer class="page-footer light-blue">
-    <div class="footer-copyright">
-      <div class="container">
-        &copy; 2016 <a href="/" class="white-text">TJCTF</a>
-      </div>
-    </div>
-    </footer>
+        </header>
+        <main>
+        {% block main %}
+
+        {% endblock %}
+        </main>
+        <footer class="page-footer light-blue">
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; 2016 <a href="/" class="white-text">TJCTF</a>
+            </div>
+        </div>
+        </footer>
 
 
-    {% block js %}
+        {% block js %}
         <!--  Scripts  -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
@@ -131,7 +131,7 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         {% endblock %}
 
-{% endblock %}
-  </body>
-  
+        {% endblock %}
+    </body>
+
 </html>

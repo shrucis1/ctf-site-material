@@ -1,77 +1,77 @@
 {% extends "base.html" %}
 {% block index_banner %}
-    <h1 class="header center grey-text text-darken-4">
-        <img src={{ url_for('static', filename="logo_600x200.png") }} alt="TJCTF" class="mid-logo" />
-    </h1>
-    <div class="row center" style="margin-top: -2rem;margin-bottom: 0.5rem">
-        <h5 class="header col s12 grey-text text-darken-4">
-            May 27&ndash;30, 2016
-            <div style="margin-top: 0.75rem">
-                9PM&ndash;9PM EDT
-            </div>
-        </h5>
-    </div>
-    <div class="row center">
-        <a href="#register" id="register-now" class="btn-large waves-effect waves-light light-blue">Register Now</a>
-    </div>
-    <div class="parallax blurred transluscent"><img src={{ url_for('static', filename="dome.png") }} alt="TJHSST Dome"></div>
+<h1 class="header center grey-text text-darken-4">
+    <img src={{ url_for('static', filename="logo_600x200.png") }} alt="TJCTF" class="mid-logo" />
+</h1>
+<div class="row center" style="margin-top: -2rem;margin-bottom: 0.5rem">
+    <h5 class="header col s12 grey-text text-darken-4">
+        May 27&ndash;30, 2016
+        <div style="margin-top: 0.75rem">
+            9PM&ndash;9PM EDT
+        </div>
+    </h5>
+</div>
+<div class="row center">
+    <a href="#register" id="register-now" class="btn-large waves-effect waves-light light-blue">Register Now</a>
+</div>
+<div class="parallax blurred transluscent"><img src={{ url_for('static', filename="dome.png") }} alt="TJHSST Dome"></div>
 {% endblock %}
 {% block main %}
-    <div class="section faq">
-        <!--   FAQ   -->
-        <div class="row four-column">
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center black-text"><i class="material-icons light-blue-text">description</i></h2>
-                    <h5 class="center grey-text text-darken-4">What is TJCTF?</h5>
-                    <p class="light grey-text text-darken-2">TJCTF is an online cybersecurity competition designed for high school students. Challenges will span various difficulty levels, so there will be problems for students who are new to computer science as well as those who are computer security experts.</p>
-                    <p class="light light-blue-text"><a href="#about">About &rarr;</a></p>
-                </div>
+<div class="section faq">
+    <!--   FAQ   -->
+    <div class="row four-column">
+        <div class="col s12 m3">
+            <div class="icon-block">
+                <h2 class="center black-text"><i class="material-icons light-blue-text">description</i></h2>
+                <h5 class="center grey-text text-darken-4">What is TJCTF?</h5>
+                <p class="light grey-text text-darken-2">TJCTF is an online cybersecurity competition designed for high school students. Challenges will span various difficulty levels, so there will be problems for students who are new to computer science as well as those who are computer security experts.</p>
+                <p class="light light-blue-text"><a href="#about">About &rarr;</a></p>
             </div>
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center black-text"><i class="material-icons light-blue-text">people</i></h2>
-                    <h5 class="center grey-text text-darken-4">How do I register?</h5>
-                    <p class="light grey-text text-darken-2">TJCTF is open to all eligible High School students (tl;dr Americans, but if you have questions read the rules). You can compete in teams consisting of up to 5 members. Teams who do not fit these criteria may play, but are not eligible for prizes.</p>
-                    <p class="light light-blue-text"><a href="#register">Register &rarr;</a></p>
-                </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="icon-block">
+                <h2 class="center black-text"><i class="material-icons light-blue-text">people</i></h2>
+                <h5 class="center grey-text text-darken-4">How do I register?</h5>
+                <p class="light grey-text text-darken-2">TJCTF is open to all eligible High School students (tl;dr Americans, but if you have questions read the rules). You can compete in teams consisting of up to 5 members. Teams who do not fit these criteria may play, but are not eligible for prizes.</p>
+                <p class="light light-blue-text"><a href="#register">Register &rarr;</a></p>
             </div>
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center black-text"><i class="material-icons light-blue-text">assignment_turned_in</i></h2>
-                    <h5 class="center grey-text text-darken-4">How does it work?</h5>
-                    <p class="light grey-text text-darken-2">Simple. Your team is given 2 days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
-                    <p class="light light-blue-text"><a href="#rules">Competition Rules &rarr;</a></p>
-                </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="icon-block">
+                <h2 class="center black-text"><i class="material-icons light-blue-text">assignment_turned_in</i></h2>
+                <h5 class="center grey-text text-darken-4">How does it work?</h5>
+                <p class="light grey-text text-darken-2">Simple. Your team is given 2 days to solve as many challenges as possible, by finding a string called the "flag" after solving a puzzle. You'll know when you've found it. Each flag you find earns you points.</p>
+                <p class="light light-blue-text"><a href="#rules">Competition Rules &rarr;</a></p>
             </div>
-            <div class="col s12 m3">
-                <div class="icon-block">
-                    <h2 class="center black-text"><i class="material-icons light-blue-text">code</i></h2>
-                    <h5 class="center grey-text text-darken-4">How do I prepare?</h5>
-                    <p class="light grey-text text-darken-2">TJCTF has challenges for computer science students with all levels of experience, so preparation shouldn't be necessary. If you'd like to brush up on computer security to give your team an edge, we've compiled some helpful materials.</p>
-                    <p class="light light-blue-text"><a href="#prep">Preparation Materials &rarr;</a></p>
-                </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="icon-block">
+                <h2 class="center black-text"><i class="material-icons light-blue-text">code</i></h2>
+                <h5 class="center grey-text text-darken-4">How do I prepare?</h5>
+                <p class="light grey-text text-darken-2">TJCTF has challenges for computer science students with all levels of experience, so preparation shouldn't be necessary. If you'd like to brush up on computer security to give your team an edge, we've compiled some helpful materials.</p>
+                <p class="light light-blue-text"><a href="#prep">Preparation Materials &rarr;</a></p>
             </div>
         </div>
     </div>
+</div>
 
-    {% include "about.html" %}
+{% include "about.html" %}
 
-    {% include "register.html" %}
+{% include "register.html" %}
 
-    {% include "rules.html" %}
+{% include "rules.html" %}
 
-    {% include "prep.html" %}
+{% include "prep.html" %}
 
-    {% include "sponsors.html" %}
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+{% include "sponsors.html" %}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
-    
+
 {% endblock %}

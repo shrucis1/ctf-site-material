@@ -109,6 +109,14 @@ p, ol#rules {
     }
 }
 
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
 .icon-block {
     padding: 0 15px;
 }

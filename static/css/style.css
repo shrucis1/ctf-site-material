@@ -121,9 +121,15 @@ p, ol#rules {
     width: 80%;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .prize-container {
-        height: 175px;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .prize-container {
+        height: 150px;
     }
 }
 

@@ -1,0 +1,40 @@
+<div class="parallax-container small-parallax valign-wrapper" id="prizes">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h1 class="header col s12 light blue-grey-text text-darken-2">Prizes</h1>
+            </div>
+        </div>
+    </div>
+    <div class="parallax blurred transluscent"><img src={{ url_for('static', filename='dome2.png') }} alt="TJHSST Dome 2" /></div>
+</div>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m12 l4">
+                    <center>
+                        <div class="prize-container">
+                            <img class="prize" src="{{ url_for('static', filename='prizes/first.png') }}" />
+                        </div>
+                        <h5 class="light center"><strong>1st Place</strong><br />Google Chromebooks</h4>
+                    </center>
+            </div>
+            <div class="col s12 m12 l4">
+                    <center>
+                        <div class="prize-container">
+                            <img class="prize" style="margin-top: 50px; margin-left: 20px;" src="{{ url_for('static', filename='prizes/second.png') }}" />
+                        </div>
+                        <h5 class="light center"><strong>2nd Place</strong><br />Intel Compute Sticks</h5>
+                    </center>
+            </div>
+            <div class="col s12 m12 l4">
+                <center>
+                        <div class="prize-container">
+                            <img class="full" src="{{ url_for('static', filename='prizes/third.png') }}" />
+                        </div>
+                        <h5 class="light center"><strong>3rd Place</strong><br />Pebbles</h5>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>

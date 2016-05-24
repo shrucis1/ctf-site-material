@@ -1,4 +1,4 @@
-/* Custom Stylesheet */
+/ * Custom Stylesheet */
 
 
 /**
@@ -117,6 +117,21 @@ p, ol#rules {
     width: 40%;
 }
 
+.prize {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    .prize-container {
+        height: 175px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .prize-container {
+        height: 100%;
+    }
+}
 .icon-block {
     padding: 0 15px;
 }

@@ -1,8 +1,8 @@
-#TJCTF Website
-##Basic Info
+# TJCTF Website
+## Basic Info
 This is a material design version of the TJCTF website that will be used in TJCTF 2016.
 This website was designed using [materialize.css](http://materializecss.com/)
-##Run Site
+## Run Site
 First, clone the repository onto your computer by doing `git clone https://github.com/TJCSec/ctf-site-material.git`
 
 Change into the directory by doing `cd ctf-site-material`
